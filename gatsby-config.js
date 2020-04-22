@@ -27,7 +27,7 @@ module.exports = {
     {
       resolve: `gatsby-source-wordpress`,
       options: {
-        baseUrl: "practice.codingsrc.com",
+        baseUrl: "rocanatural.es",
         protocol: "http",
         restApiRoutePrefix: "wp-json",
         hostingWPCOM: false,
