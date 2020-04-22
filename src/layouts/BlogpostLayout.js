@@ -32,7 +32,6 @@ export default BlogpostLayout
 export const query = graphql`
   query($slug: String!) {
     wordpressPost(slug: { eq: $slug }) {
-      categories
       content
       title
       featured_media {
