@@ -23,7 +23,7 @@ const SEO = ({title, description, image}) => (
             name="description"
             content={seo.description}
           />
-          <meta name="robots" content="noindex, nofollow" />
+          <meta name="robots" content="index, follow" />
         </Helmet>
       )
     }}

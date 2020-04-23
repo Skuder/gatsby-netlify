@@ -8,9 +8,15 @@ export default (props) => (
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
     <Navbar.Collapse id="basic-navbar-nav">
       <Nav className="mr-auto">
-        <Nav.Link as={Link} to ="/">Home</Nav.Link>
-        <Nav.Link as={Link} to ="/contact">Contact</Nav.Link> 
-        <Nav.Link as={Link} to ="/about">About Us</Nav.Link> 
+        <Nav.Link as={Link} to ="/">
+          <b class="text-dark">Home</b>
+          </Nav.Link>
+        <Nav.Link as={Link} to ="/contact">
+        <b class="text-dark">Contact</b>
+          </Nav.Link> 
+        <Nav.Link as={Link} to ="/about">
+        <b class="text-dark">About Us</b>
+          </Nav.Link> 
         
  
       </Nav>
