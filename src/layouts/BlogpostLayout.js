@@ -12,16 +12,18 @@ const BlogpostLayout = ({ data }) => {
     <div>
       <SEO
         title={innertext(post.title)}
-        description= {innertext(post.excerpt)}
+        description={innertext(post.excerpt)}
         image={post.featured_media.source_url}
-    />
+      />
       <Header />
-      <div className="container">
-        <div className="row justify-content-md-center">
-          <h1 dangerouslySetInnerHTML={{ __html: post.title }} />
-          <div dangerouslySetInnerHTML={{ __html: post.content }}></div>
+      <main>
+        <div className="container">
+          <div className="row justify-content-md-center">
+            <h1 dangerouslySetInnerHTML={{ __html: post.title }} />
+            <div dangerouslySetInnerHTML={{ __html: post.content }}></div>
+          </div>
         </div>
-      </div>
+      </main>
 
       <Footer />
     </div>
